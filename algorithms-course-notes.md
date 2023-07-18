@@ -123,3 +123,44 @@ Buddle sort is `O(n^2)` time complexity, Why. well the total time is:
 * sum = 1 + 2 + 3 ... + N = (n(n+1)/2)
 * drop consts: n^2 + n
 * drop insugificant values: n^2
+
+## Data structure - Linked list
+
+A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. The elements in a linked list are linked using pointers.
+
+In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
+
+* Single linked list: `node<T>; val: T, next: node<T>`.
+* Double linked list: `node<T>; val: T, next: node<T>, previous: node<T>`.
+
+Linked list can deal with addition and delection from the list, and you just add/change values for next and previous. The time complexity of this is `O(n)` as we are only adding/removing 4 links.
+
+There is no index in linked list.
+
+## Data structure - Queue
+
+Is a First in, first out data structure. Is basically a single linked list. A queue has a head and a tail. you always dequeue from the head, peep the head value (see the next value) and always enqueue to the tail.
+
+## Data structure - Stack
+
+Is the opposite of a Queue, you impliment last in, first out operations. You dequeue from the head and you enqueue from the head. There is no tail.
+
+## Array vs Linked list
+
+Different points to consider:
+1) Usabilty. LL not good for searching for item or getting an index. Array must predefine sime at start.
+2) Time - LL can be more effient. 
+3) space
+
+## Data structure - ArrayList
+
+The difference between a built-in array and an ArrayList in Java, is that the size of an array cannot be modified (if you want to add or remove elements to/from an array, you have to create a new one). While elements can be added and removed from an ArrayList whenever you want. The syntax is also slightly different:
+
+### Pros/Cons
+
+ArrayList is very bad for methods like 'enqueue' and 'dequeue' but very good for methods like 'push' or 'pop'
+
+## ArrayBuffer
+
+Similar to a Ring Buffer (or Circular Buffer) is a bounded circular data structure that is used for buffering data between two or more threads. As we keep writing to a ring buffer, it wraps around as it reaches the end.
+
